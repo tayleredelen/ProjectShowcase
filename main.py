@@ -14,6 +14,10 @@ with col2:
     In August 2023 I graduated from the coding bootcamp LaunchCode in STL. 
     I learned Java and JavaScript, and applied them through full-stack web development. 
     Learning Python I am continuing to satisfy my technological curiosities.  
-    This page is a showcase of all the Python projects I created through the Python Mega Course. 
     """
     st.info(content)
+
+content2 = """
+Below are Python projects I created through the Udemy Python Mega Course.
+"""
+st.write(content2)
