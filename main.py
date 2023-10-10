@@ -24,16 +24,20 @@ Feel free to contact me!
 """
 st.write(content2)
 
-col3, col4 = st.columns(2)
+col3, empty_column, col4 = st.columns([1.5, 0.5, 1.5])
 df = pandas.read_csv("data.csv", sep=";")
 # tells pandas to read csv and separate data by semicolon
 
 with col3:
     for index, row in df.iterrows():
         st.header(row["title"])
+        st.write(row["description"])
+        st.image("images/" + row["image"])
+        st.write(f"[Source Code]({row['url']})")
 
 
 with col4:
     for index, row in df.iterrows():
         st.header(row["title"])
-
+        st.write(row["description"])
+        st.image("images/" + row["image"])
