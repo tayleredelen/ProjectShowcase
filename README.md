@@ -1,3 +1,2 @@
 # What is this project?
-This is a web app to showcase Python projects
-### Web Developtments
+A website built entirely in Python to showcase coding projects and apps.
